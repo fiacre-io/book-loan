@@ -1,0 +1,26 @@
+// Typography
+
+$primary-font: 'Cinzel Decorative', cursive, 'Arial Black', Gadget, sans-serif;
+$secondary-font: 'Raleway', 'Arial', sans-serif;
+$primary-font-color: #d9b310;
+$secondary-font-color: #1d2731;
+
+// Colors
+
+$background: #f8eee7;
+$gradient: #94618e;
+
+// Buttons
+
+$primary-color: #49274a;
+$secondary-color: #fff;
+$social-primary-color: #cccccb;
+$social-secondary-color: #999998;
+$border-radius: 10px;
+$border-width: 1px;
+$form-button-color: $secondary-font-color;
+$border-color: $primary-color;
+$border-style: solid;
+$border-primary: $border-width $border-style $border-color;
+$border-form: $border-width $border-style $form-button-color;
+$button-font-size: 12px;

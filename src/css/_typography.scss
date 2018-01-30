@@ -1,0 +1,70 @@
+// Typography
+
+h1 {
+  font-family: $primary-font;
+  font-weight: 900;
+  color: $primary-font-color;
+  font-size: 90px;
+  margin: 0;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+&:before,
+&:after{
+  background: $primary-font-color;
+  display: block;
+  height: 5px;
+  width: 100%;
+  content: '';
+}
+}
+
+h2 {
+  font-family: $primary-font;
+  font-weight: 900;
+  color: $primary-font-color;
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  font-family: $primary-font;
+  font-weight: 400;
+  color: $primary-font-color;
+  font-size: 24px;
+  margin: 0;
+}
+
+h4 {
+  font-family: $secondary-font;
+  color: $secondary-font-color;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+h5 {
+  font-family: $secondary-font;
+  color: $secondary-font-color;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+h6 {
+  font-family: $secondary-font;
+  color: $secondary-font-color;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+p {
+    font-family: $secondary-font;
+    font-size: 14px;
+    color: $secondary-font-color;
+}
+
+.title {
+  margin-bottom: 20px;
+}

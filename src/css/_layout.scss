@@ -1,0 +1,189 @@
+// Layout
+
+body {
+  margin: 2% 5%;
+  background: $primary-color;
+  background: -moz-linear-gradient(top, $primary-color 21%, $gradient 100%);
+  background: -webkit-linear-gradient(top, $primary-color 21%, $gradient 100%);
+  background: linear-gradient(to bottom, $primary-color 21%, $gradient 100%);
+}
+
+.main-library {
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100vh;
+  padding: 10px;
+  h4 {
+    text-align: center;
+  }
+}
+
+.column {
+  background: $background;
+  padding: 20px;
+  border: 4px solid $primary-font-color;
+}
+
+.not-found {
+  min-height: 100vh;
+}
+
+
+// Book form
+
+.book-edit {
+  margin-bottom: 20px;
+  border: $border-form;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  input,
+  textarea,
+  select {
+    width: 33.33%;
+    padding: 10px;
+    font-size: 12px;
+    border: 0;
+    border-bottom: $border-form;
+    border-right: $border-form;
+    appearance: none;
+    border-radius: 0;
+    background: $secondary-color;
+    &:focus,
+    &:focus,
+    &:focus {
+      outline: 0;
+      background: $gradient;
+    }
+  }
+  button {
+  width: 100%;
+  border: 0;
+  background: $secondary-color;
+}
+input:last-of-type {
+  width: 100%;
+}
+}
+
+.book-edit textarea {
+  width: 100%;
+}
+
+button, input[type=submit] {
+  text-transform: uppercase;
+  border: $border-form;
+  font-size: 12px;
+  font-family: $secondary-font;
+  transition: all .2s;
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 0;
+  background: white;
+}
+
+.list-of-books {
+  border-top: $border-form;
+  border-bottom: $border-form;
+  padding-top: 5px;
+  margin-top: 30px;
+  transform: translateZ(0);
+}
+
+// Book Sheleves List
+
+.menu-book {
+  border-bottom: $border-form;
+  border-top: $border-form;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  clear: both;
+  overflow: hidden;
+  text-align: left;
+  p {
+    font-family: $secondary-font;
+    margin: 10px 0;
+    font-size: 16px;
+    color: $secondary-font-color;
+    overflow: hidden;
+  }
+  .book-name {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+  .author {
+    font-size: 16px;
+    justify-content: flex-end;
+  }
+  img {
+    float: left;
+    width: 150px;
+    margin-right: 16px;
+  }
+}
+
+
+button,input[type=submit] {
+  text-transform: uppercase;
+  background: none;
+  border: $border-form;
+  font-size: 12px;
+  font-family: $secondary-font;
+  transition: all .2s;
+  position: relative;
+  z-index: 2;
+}
+
+// Loans
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.order li {
+  border-bottom: $border-form;
+  padding: 2rem 0;
+  display: flex;
+  font-size: 12px;
+  color: $secondary-font-color;
+  justify-content: space-between;
+  align-items: center;
+  button {
+  border: 0;
+  display: none;
+  line-height: 1;
+  padding: 0;
+}
+&:hover button {
+  display: inline;
+}
+}
+
+// Media query
+
+@media screen and (max-width: 980px){
+  .content {
+    grid-area: content;
+    position: relative;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 1fr;
+    min-height: 50vh;
+  }
+}

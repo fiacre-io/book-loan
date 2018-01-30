@@ -1,0 +1,39 @@
+{
+  "name": "book_loan",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://fiacre-io.github.io/demo-book-loan/",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "concurrently": "3.0.0",
+    "eslint": "^3.12.2",
+    "eslint-plugin-flowtype": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.8.0",
+    "react-scripts": "0.6.1",
+    "react-to-print": "^1.0.4"
+  },
+  "dependencies": {
+    "history": "4.2.0",
+    "moment": "^2.20.1",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "re-base": "^2.2.0",
+    "react": "15.3.2",
+    "react-addons-css-transition-group": "15.3.2",
+    "react-dom": "15.3.2",
+    "react-router": "4.0.0-alpha.4"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src/css --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/css --include-path ./node_modules src/css/ -o src/css/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/.eslintrc"
+  }
+}
